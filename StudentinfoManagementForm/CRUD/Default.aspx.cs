@@ -68,5 +68,16 @@ namespace CRUD
             LoadRecord();
 
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            SqlCommand comm = new SqlCommand("select * from StudentInfoTable  where StudentId='" + int.Parse(TextBox1.Text)+"'", con);
+            SqlDataAdapter d = new SqlDataAdapter(comm);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+
+        }
     }
 }

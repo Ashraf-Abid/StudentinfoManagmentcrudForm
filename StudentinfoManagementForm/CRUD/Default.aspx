@@ -57,6 +57,8 @@
                 <asp:Button ID="Button2" runat="server" BackColor="#00FF99" BorderColor="#660066" Text="Update" OnClick="Button2_Click" />
             &nbsp;&nbsp;
                 <asp:Button ID="Button3" runat="server" BackColor="Red" BorderColor="Red" Text="Delete" OnClick="Button3_Click" />
+            &nbsp;&nbsp;
+                <asp:Button ID="Button4" runat="server" BackColor="Yellow" BorderColor="Red" Text="Search" OnClick="Button4_Click" />
             </td>
         </tr>
     </table>
